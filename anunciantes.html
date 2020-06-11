@@ -60,7 +60,7 @@
 
 
               <section class="row">
-                <div id="introducao" col-md-10 col-sm-12>
+                <div id="introducao" class="col-md-10 offset-md-1 col-sm-12">
                     <p>Segundo dados da United Nations Population Fund (UNFPA)  a população mundial está envelhecendo rapidamente, e as pessoas com 60 anos (ou mais) representam 12,3% da população global. Além disso, estima-se que em 2050, esse número irá aumentar para quase 22%.</p>
                     <p>Atenta a isso, nossa equipe desenvolveu uma ferramenta para facilitar a vida do nosso principal público alvo (o idoso) de forma a incluí-lo melhor na sociedade.</p>
                     <p>Seja nosso parceiro! Anuncie, e ganhe visibiliade!</p>
@@ -99,7 +99,7 @@
                                       </div>
                                       <!-- Button -->
                                       <div class="pricing-button pb-4">
-                                          <button type="button" class="btn btn-lg btn-primary w-75">Solicitar</button>
+                                        <a href="#opcoes" class="btn btn-lg btn-primary w-75">Solicitar</a>
                                       </div>
                                   </div>
                               </div>
@@ -124,7 +124,7 @@
                                           </ul>
                                       </div>
                                       <div class="pricing-button pb-4">
-                                          <button type="button" class="btn btn-lg btn-primary w-75">Solicitar</button>
+                                        <a href="#opcoes" class="btn btn-lg btn-primary w-75">Solicitar</a>
                                       </div>
                                   </div>
                               </div>
@@ -149,7 +149,7 @@
                                           </ul>
                                       </div>
                                       <div class="pricing-button pb-4">
-                                          <button type="button" class="btn btn-lg btn-primary w-75">Solicitar</button>
+                                          <a href="#opcoes" class="btn btn-lg btn-primary w-75">Solicitar</a>
                                       </div>
                                   </div>
                               </div>
@@ -187,7 +187,7 @@
            
             <div id="formulário">
                 <section clas="row">
-                  <div id="opcoes" class="col-md-8 offset-md-4">
+                  <div id="opcoes" class="col-md-7 offset-md-5">
                     <div class="custom-control custom-radio custom-control-inline">
                         <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
                         <label class="custom-control-label" for="customRadioInline1">Plano Mensal</label>
@@ -248,9 +248,11 @@
                           </div>
                         </div>
                       </div>
-                      <button class="btn-primary" type="submit">Enviar</button>
+                      <!-- Suprimi o botão verdadeiro para simular o envio do formulário via 'alert'. -->
+                      <!-- <button class="btn-primary" type="submit">Enviar</button> -->
+                      <a class="btn btn-enviar">Enviar</a> 
                     </form>
-                </div>
+                  </div>
                 </section>
             </div>
 
@@ -263,8 +265,16 @@
             </footer>
 
 
+            <script>
+              window.onload=()=>{
+                  $(".btn-enviar").click(
+                      function () {
+                          alert("Formulário enviado! Retornaremos em breve. Obrigado.");
+                      }
+                  );
+              }
+          </script>
 
-            
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
