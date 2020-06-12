@@ -107,6 +107,11 @@ body {
 
   /*Formulário anunciantes*/
 
+  body#anunciante{
+    max-width: 1200px;
+    margin: auto;
+  }
+
   #titulo{
     width: 100%;
     text-align: center;
