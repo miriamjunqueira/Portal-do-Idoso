@@ -1,5 +1,5 @@
 body{
-    background-color: #F1F0EE;
+    background-color: lightcyan;
 }
 
 .header{
@@ -12,7 +12,9 @@ body{
     margin-bottom: 20px;
 }
 
-.logo{ max-width:200px;}  
+.logo{ max-width:250px;
+  padding-top: 10px;
+}  
 
 .joinha img { max-width: 100%; margin-top: 20px;} 
 
@@ -47,9 +49,9 @@ body{
     margin-bottom: 20px;
 }
 
-.infos{
+/* .infos{
     background-color: white;
-}
+} */
 
 .infos h1 { font-size: 1.2em;}
 
@@ -61,6 +63,7 @@ body{
     margin-top: 15px ;
     color:  black;
     padding: 20px;
+    background-color:gainsboro;
 }
 
 .footer_area{
@@ -90,6 +93,9 @@ body{
 @media screen and (min-width:601px) and (max-width:980px){
     .header{
         background-position: 0px -100px;
+    }
+    .grid-9cards{
+        display: none
     } 
     
 }
