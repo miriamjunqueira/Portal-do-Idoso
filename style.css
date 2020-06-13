@@ -1,5 +1,7 @@
+/*não consegui achar imagens hd para melhorar o visual do site, pois a dimensão que o site demanda é muito grande então deixa as fotos pixeladas */
 body{
     background-color: lightcyan;
+	background-image: linear-gradient(to right, white, lightcyan, white);
 }
 
 .header{
@@ -15,7 +17,16 @@ body{
 .logo{ max-width:250px;
   padding-top: 10px;
 }  
+.carousel-item
+{
+	height: 450px;
 
+}
+.carrouselfoto
+{
+	height: 450px;
+	width:100%;
+}
 .joinha img { max-width: 100%; margin-top: 20px;} 
 
 .idoso_ativo {margin-top: 20px;}
@@ -49,6 +60,10 @@ body{
     margin-bottom: 20px;
 }
 
+h4
+{
+	text-shadow: 3px 3px 5px black;
+}
 /* .infos{
     background-color: white;
 } */
@@ -87,6 +102,11 @@ body{
     .grid-9cards{
         display: none
     }
+	.carrouselfoto
+	{
+		width:100%;
+		heigth:100px;
+	}
    
 }
 
@@ -97,8 +117,13 @@ body{
     .grid-9cards{
         display: none
     } 
-    
+    .carrouselfoto
+	{
+		width:100%;
+		heigth:100px;
+	}
 }
+
 
 @media screen and (max-width: 1000px) {
 
