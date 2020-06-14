@@ -1,201 +1,219 @@
 /*não consegui achar imagens hd para melhorar o visual do site, pois a dimensão que o site demanda é muito grande então deixa as fotos pixeladas */
-body{
-    background-color: lightcyan;
-	background-image: linear-gradient(to right, white, lightcyan, white);
+body {
+  background-color: lightblue;
+  /*background-image: linear-gradient(to right, white, lightcyan, white);*/
 }
 
-.header{
-    background-image: url(imagens/brisaazul.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0px -250px;
-    color: white;
-    padding: 15px;
-    margin-bottom: 20px;
+.header {
+  background-image: url(imagens/brisaazul.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -250px;
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
-.logo{ max-width:250px;
+nav.menu1 a {
+  font-size: medium;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+
+.logo {
+  max-width: 350px;
   padding-top: 10px;
-}  
-.carousel-item
-{
-	height: 450px;
-
 }
-.carrouselfoto
-{
-	height: 450px;
-	width:100%;
+.carousel-item {
+  height: 450px;
 }
-.joinha img { max-width: 100%; margin-top: 20px;} 
-
-.idoso_ativo {margin-top: 20px;}
-
-.continue_lendo{
-    color:  blue;
+.carrouselfoto {
+  height: 400px;
+  width: 100%;
+}
+.joinha img {
+  max-width: 100%;
+  margin-top: 20px;
 }
 
-.free{
-    height: 100%;
+.idoso_ativo {
+  margin-top: 20px;
 }
 
-.main .card{
-    margin-bottom: 15px;
+.continue_lendo {
+  color: blue;
 }
 
-.eventos_cursos { background-color: #2680D4; padding: 15px; margin-top: 20px; margin-bottom: 20px;}
+.free {
+  height: 100%;
+}
 
+.main .card {
+  margin-bottom: 15px;
+}
 
-.fita-eventos-cursos{ text-align: center;}
+.eventos_cursos {
+  background-color: #2680d4;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-.card_area > div { margin-bottom: 10px; }
+.fita-eventos-cursos {
+  text-align: center;
+}
 
-.card_area img { width: 100%;}
+.card_area > div {
+  margin-bottom: 10px;
+}
 
-.clique_aqui{
-    color:  blue;
+.card_area img {
+  width: 100%;
+}
+
+.clique_aqui {
+  color: blue;
 }
 
 .carrossel_turismo {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-h4
-{
-	text-shadow: 3px 3px 5px black;
+h4 {
+  text-shadow: 3px 3px 5px black;
+  color: white;
 }
 /* .infos{
     background-color: white;
 } */
 
-.infos h1 { font-size: 1.2em;}
-
-.grid-9cards{
-    max-height: 190px; 
+.infos h1 {
+  font-size: 1.2em;
 }
 
-.footer{
-    margin-top: 15px ;
-    color:  black;
-    padding: 20px;
-    background-color:gainsboro;
+.grid-9cards {
+  max-height: 190px;
 }
 
-.footer_area{
-    text-align: center;
+.nove-cards img {
+  width: 100px;
+  height: 100px;
+}
+
+.footer {
+  margin-top: 15px;
+  color: black;
+  padding: 20px;
+  background-color: gainsboro;
+}
+
+.footer_area {
+  text-align: center;
 }
 
 #menuToggle {
-    display: none;
-  }
-.menu-icon {
-    display: none;
+  display: none;
 }
-
+.menu-icon {
+  display: none;
+}
 
 /* Media Queries */
 
-@media screen and (max-width:600px){
-    .header{
-        background-position: 0px -50px;
-    } 
-    .grid-9cards{
-        display: none
-    }
-	.carrouselfoto
-	{
-		width:100%;
-		heigth:100px;
-	}
-   
+@media screen and (max-width: 600px) {
+  .header {
+    background-position: 0px -50px;
+  }
+  .grid-9cards {
+    display: none;
+  }
+  .carrouselfoto {
+    width: 100%;
+    height: 100px;
+  }
 }
 
-@media screen and (min-width:601px) and (max-width:980px){
-    .header{
-        background-position: 0px -100px;
-    }
-    .grid-9cards{
-        display: none
-    } 
-    .carrouselfoto
-	{
-		width:100%;
-		heigth:100px;
-	}
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  .header {
+    background-position: 0px -100px;
+  }
+  .grid-9cards {
+    display: none;
+  }
+  .carrouselfoto {
+    width: 100%;
+    height: 100px;
+  }
 }
-
 
 @media screen and (max-width: 1000px) {
+  .header {
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    max-width: 100% !important;
+  }
+  .container_nav {
+    display: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .main {
+    margin-top: 140px;
+  }
 
-    .header{        
-        position: fixed;
-        top: 0px;        
-        z-index: 999;
-        max-width:100% !important;
-    }
-    .container_nav {
-        display: absolute;
-        width: 100%;
-        height: 100%;
-    }
-    .main{
-        margin-top: 140px;
-    }
+  .menu1 {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-content: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+  }
 
-    .menu1 {
-        display: flex;
-        position: fixed;
-        flex-wrap: wrap;
-        align-content: center;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 0%;
-        background-color: rgba(0, 0, 0, 0.7);
-        overflow: hidden;
-        -webkit-transition: height 0.3s;
-        -moz-transition: height 0.3s;
-        -ms-transition: height 0.3s;
-        -o-transition: height 0.3s;
-        transition: height 0.3s;
-    }
+  .menu1 a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .menu-icon {
+    width: 50px;
+    height: inherit;
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    line-height: 60px;
+    color: rgb(28, 7, 99);
+    z-index: 999;
+  }
+  #menuToggle:checked ~ label i:nth-child(2) {
+    display: block;
+  }
+  #menuToggle:checked ~ label i:first-child {
+    display: none;
+  }
+  #menuToggle:not(:checked) ~ label i:first-child {
+    display: block;
+  }
+  #menuToggle:not(:checked) ~ label i:nth-child(2) {
+    display: none;
+  }
 
-    .menu1 a {
-        display: block;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .menu-icon {
-        width: 50px;
-        height: inherit;
-        display: block;
-        position: absolute;
-        top: 55px;
-        right: 30px;
-        line-height: 60px;
-        color: rgb(28, 7, 99);
-        z-index: 999;
-    }
-    #menuToggle:checked ~ label i:nth-child(2) {
-      display: block;
-    }
-    #menuToggle:checked ~ label i:first-child {
-      display: none;
-    }
-    #menuToggle:not(:checked) ~ label i:first-child {
-      display: block;
-    }
-    #menuToggle:not(:checked) ~ label i:nth-child(2) {
-      display: none;
-    }
-  
-    #menuToggle:checked ~ nav {
-        height: 100%;
-    }
-    .menu-icon i {
-        font-size: 1.7em;
-    }
+  #menuToggle:checked ~ nav {
+    height: 100%;
+  }
+  .menu-icon i {
+    font-size: 1.7em;
+  }
 }
-
-/* TESTES */
