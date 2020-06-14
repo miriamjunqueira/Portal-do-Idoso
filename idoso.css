@@ -31,7 +31,18 @@ footer .infos{
     color: dimgray;
 }
 
+.card img{
+    height: 500px;
+}
+
 @media screen and (max-width:600px){
+    .logo{
+        max-width: 250px;
+    }
+
+    .card img{
+        height: 225px;
+    }
     .header{
         background-position: 0px -50px;
     } 
