@@ -1,7 +1,9 @@
 /*não consegui achar imagens hd para melhorar o visual do site, pois a dimensão que o site demanda é muito grande então deixa as fotos pixeladas */
 body {
-  background-color: lightblue;
+  background-color: rgb(205, 225, 231);
   /*background-image: linear-gradient(to right, white, lightcyan, white);*/
+  max-width: 1200px;
+  margin: auto;
 }
 
 .header {
