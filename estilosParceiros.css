@@ -23,6 +23,12 @@ header {
   margin-bottom: 30px;
 }
 
+#formulario .form-group {
+  padding: 5px;
+  padding-bottom: 10px;
+  margin: 2px;
+}
+
 .main {
   background-color: rgb(205, 225, 231) !important;
   margin: 0;
@@ -33,7 +39,6 @@ header {
   text-align: center;
   color: darkblue;
 }
-
 
 .helena img {
   max-width: 500px;
@@ -95,16 +100,15 @@ header {
   height: auto;
 }
 
-.voltar{
+.voltar {
   display: block;
   text-align: right !important;
   margin: 0px;
   padding: 0px;
   margin-right: 10px;
   color: aqua;
-  
 }
 
-.footer a{
+.footer a {
   text-decoration: none !important;
 }
