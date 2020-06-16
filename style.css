@@ -14,13 +14,17 @@ body {
   color: white;
   padding: 15px;
   margin-bottom: 20px;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+    font-size: larger;
 }
 
-nav.menu1 a {
-  font-size: medium;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 700;
+.header a{
+  text-decoration: none;
+  color: rgb(40, 173, 23);
 }
+
 
 .logo {
   max-width: 350px;
@@ -129,17 +133,17 @@ h4 {
   .grid-9cards {
     display: none;
   }
-.carousel-item{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  height: 200px;
-  width: 100%;
-}
+  .carousel-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 200px;
+    width: 100%;
+  }
 
-.carrouselfoto{
-  height: 200px;
-}
-  .logo{
+  .carrouselfoto {
+    height: 200px;
+  }
+  .logo {
     max-width: 250px;
   }
 }
@@ -151,8 +155,8 @@ h4 {
   .grid-9cards {
     display: none;
   }
-  
-  .carousel-item{
+
+  .carousel-item {
     margin-top: 30px;
   }
 }

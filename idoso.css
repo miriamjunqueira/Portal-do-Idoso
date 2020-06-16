@@ -10,6 +10,13 @@ body{
     color: white;
     padding: 15px;
     margin-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header a{
+    text-decoration: none;
+    color: rgb(40, 173, 23);
 }
 
 .logo{ max-width:400px;}
