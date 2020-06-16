@@ -100,6 +100,11 @@ header {
   height: auto;
 }
 
+#totalGrid {
+  display: block;
+  max-width: 100%;
+}
+
 .voltar {
   display: block;
   text-align: right !important;
@@ -111,4 +116,21 @@ header {
 
 .footer a {
   text-decoration: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+  section.grid {
+    display: block;
+    grid-template-columns: none;
+    width: 100% !important;
+  }
+
+  section.grid .card {
+    margin: auto;
+    margin-bottom: 8px;
+  }
+
+  .helena img {
+    max-width: 100%;
+  }
 }
