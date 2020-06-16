@@ -46,7 +46,7 @@
           <label for="nome" class="text-info">E-mail:</label><br />
           <input type="text" name="nome" id="nome" class="form-control" />
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-info btn-lg btn-enviar">Enviar</button>
       </section>
 
       <div class="helena">
@@ -66,7 +66,7 @@
               humanizada. Através de clínicas médicas e multidisciplinares, aliadas à informação e
               ferramentas tecnológicas, a Mais 60 Saúde atua na reabilitação, tratamento e prevenção
               de doenças, proporcionando mais saúde, melhora na qualidade de vida e independência da
-              pessoa idosa. <a href="https://www.mais60saude.com.br/">VENHA CONHECER !</a>
+              pessoa idosa. <a href="https://www.mais60saude.com.br/" target="blank">VENHA CONHECER !</a>
             </p>
           </div>
         </div>
@@ -84,7 +84,7 @@
               de atenção à terceira idade. A Casa de Repouso para Idosos Residencial Serenidade é
               ampla, arejada e totalmente adaptada de acordo com as diversas necessidades e
               individualidades dos hóspedes.
-              <a href="https://residencialserenidade.com.br/">VENHA FAZER PARTE !</a>
+              <a href="https://residencialserenidade.com.br/" target="blank">VENHA FAZER PARTE !</a>
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@
               estética e devem ser, principalmente, uma busca incansável por qualidade de vida.
               Nesse contexto, a academia para a terceira idade faz cada vez mais sucesso é uma ótima
               forma de impactar positivamente no processo natural de envelhecimento. <br /><a
-                href="https://www.ecofit.com.br"
+                href="https://www.ecofit.com.br" target="blank"
                 >CONHEÇA !</a
               >
             </p>
@@ -128,5 +128,14 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.onload=()=>{
+          $(".btn-enviar").click(
+              function () {
+                  alert("Formulário enviado! Retornaremos em breve. Obrigado.");
+              }
+          );
+      }
+    </script>
   </body>
 </html>
